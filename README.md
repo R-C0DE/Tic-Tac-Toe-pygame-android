@@ -10,7 +10,7 @@ TIC TAC TOE made in pygame. Currently supports 2Players(offline) and vs AI.
 
 ## Installation
 
-- Clone the files by : `https://github.com/R-C0DE/Tic-Tac-Toe_pygame-android/`
+- Clone the files by : `https://github.com/R-C0DE/Tic-Tac-Toe-pygame-android/`
 - You can also download the zip file for the code files
 - Run main.py to play the game.
 
