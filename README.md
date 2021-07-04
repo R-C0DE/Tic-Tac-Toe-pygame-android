@@ -1,4 +1,4 @@
-8# TIC TAC TOE
+# TIC TAC TOE
 TIC TAC TOE made in pygame. Currently supports 2Players(offline) and vs AI.
 ## Made in
 <img src = "https://img.shields.io/badge/python%20-%236C0101.svg?style=for-the-badge&logo=python&logoColor=white" alt="python"/>
@@ -18,3 +18,7 @@ TIC TAC TOE made in pygame. Currently supports 2Players(offline) and vs AI.
 
 - Download pydroid 3 in your device.
 - Run main.py to play the game.
+
+## Game preview:
+
+![MainScreenPreview](Assets/Preview/MainScreenPreview.jpg?raw=true "MainScreenPreview")
