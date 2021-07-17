@@ -15,10 +15,5 @@ TIC TAC TOE made in pygame. Currently supports 2Players(offline) and vs AI.
 
 ## Game preview:
 
-![MainScreenPreview](Assets/Preview/MainScreenPreview.jpg=200x200?raw=true "MainScreenPreview")
-
-![NeonThemePreview](Assets/Preview/NeonThemePreview.jpg?raw=true "NeonThemePreview")
-
-![WoodenThemePreview](Assets/Preview/WoodenThemePreview.jpg?raw=true "WoodenThemePreview")
-
+<img src="Assets/Preview/MainScreenPreview.jpg?raw=true" width="200"> <img src="Assets/Preview/NeonThemePreview.jpg?raw=true" width="200"> <img src="Assets/Preview/WoodenThemePreview.jpg?raw=true" width="200">
 
