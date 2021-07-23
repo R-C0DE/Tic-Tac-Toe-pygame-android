@@ -6,13 +6,13 @@ from setting import Setting
 from computer import vsComputer
 pygame.init()
 import pygame
-screen=pygame.display.set_mode((1300,840))
+screen=pygame.display.set_mode((350,650))
 screen_x, screen_y=screen.get_size()
 
 #functions
 def bg(x,y):
 	bgImg=pygame.image.load('Assets/bg.png')
-	screen.blit(pygame.transform.scale(bgImg,(screen_x,int(screen_y*0.7))),(x,y))
+	screen.blit(pygame.transform.scale(bgImg,(screen_x,int(screen_y*0.6))),(x,y))
 
 #main_screen
 playing=True
@@ -35,12 +35,13 @@ while playing:
 			click=True
 		if event.type==pygame.MOUSEBUTTONUP:
 			click=False
-	if two_player_btn.collidepoint((pos)):
-		twoPlayer(theme)
-	if vsComputer_btn.collidepoint((pos)):
-		vsComputer(theme)
-	if setting_btn.collidepoint((pos)):
-		Setting(theme)
+	if click:
+		if two_player_btn.collidepoint((pos)):
+			twoPlayer(theme)
+		if vsComputer_btn.collidepoint((pos)):
+			vsComputer(theme)
+		if setting_btn.collidepoint((pos)):
+			Setting(theme)
 	if theme_btn.collidepoint((pos)):
 		if click:
 			if theme=='dark':
