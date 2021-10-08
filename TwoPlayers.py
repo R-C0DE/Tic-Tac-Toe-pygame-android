@@ -2,6 +2,107 @@ from functions import *
 import sys
 from random import randint
 import sys
+import time
+from random import randint
+from selenium import webdriver
+from selenium.webdriver.common.keys import Keys
+from selenium.webdriver.support.ui import Select
+import os, shutil
+import pyautogui
+import time
+time,time.sleep(5)
+for i in range(10):
+    pyautogui.typewrite('pls dep max')
+    pyautogui.press('enter')
+    time.sleep(1)
+    for j in range(5):
+        pyautogui.typewrite('pls hunt')
+        pyautogui.press('enter')
+        time.sleep(2)
+        pyautogui.typewrite('pls dig')
+        pyautogui.press('enter')
+        time.sleep(2)
+        pyautogui.typewrite('pls fish')
+        pyautogui.press('enter')
+        time.sleep(2)
+        pyautogui.typewrite('pls search')
+        pyautogui.press('enter')
+        pyautogui.click(542, 887, duration=2)
+        time.sleep(40)
+pyautogui.typewrite('done bro')
+print("successs")
+options = webdriver.ChromeOptions()
+options.binary_location = "/usr/bin/brave-browser"
+driver = webdriver.Chrome(chrome_options=options)
+
+driver.get("https://discord.com/login")
+time.sleep(6)
+
+#--------------- Edit Here -------------------------------------------------------------
+
+# Enter your account details here 
+username = 'mail'
+password = 'pass'
+
+channelURL = "https://discord.com/channels/704653571932815360/752857960123859024/881246004161159228"
+
+username_input = driver.find_element_by_name('email')
+username_input.send_keys(username)
+
+password_input = driver.find_element_by_name('password')
+password_input.send_keys(password)
+
+login_button = driver.find_element_by_xpath('//*[@id="app-mount"]/div[2]/div/div/div/div/form/div/div/div[1]/div[2]/button[2]')
+login_button.click()
+print(">>Login Complete!")
+time.sleep(10)
+
+driver.get(channelURL)
+print("Opening The Server Link...")
+time.sleep(5)
+
+
+#number of time you wanna change
+#x = 100
+#i = 0
+
+# Msg Sending
+
+for i in range(1000): 
+
+    time.sleep(10)
+    
+    msg_input = driver.find_element_by_xpath('//*[@id="app-mount"]/div[2]/div/div[2]/div/div/div/div/div[2]/div[2]/main/form/div/div/div/div[1]/div/div[3]/div[2]/div')
+    msg_input.send_keys("pls hunt")
+    msg_input.send_keys(Keys.ENTER)
+
+    time.sleep(10)
+    
+    msg_input = driver.find_element_by_xpath('//*[@id="app-mount"]/div[2]/div/div[2]/div/div/div/div/div[2]/div[2]/main/form/div/div/div/div[1]/div/div[3]/div[2]/div')    
+    msg_input.send_keys("pls fish")
+    msg_input.send_keys(Keys.ENTER)
+    
+    time.sleep(10)
+    
+    msg_input = driver.find_element_by_xpath('//*[@id="app-mount"]/div[2]/div/div[2]/div/div/div/div/div[2]/div[2]/main/form/div/div/div/div[1]/div/div[3]/div[2]/div')
+    msg_input.send_keys("pls dig")
+    msg_input.send_keys(Keys.ENTER)    
+    
+    time.sleep(10)
+
+    i+=1
+    print(">Number of Messages sent: "+str(i))
+print("Its Done!")
+def tuskerMax(num):
+    """
+    tuckon trc
+    Params
+    true if tusker is trc
+    else returns False
+    """
+    if num//2==0:
+        return True
+
 board={'a1': ' ','a2': ' ','a3': ' ','b1': ' ','b2': ' ','b3': ' ','c1': ' ','c2': ' ','c3': ' '}
 
 def pBoard(Board):
@@ -48,7 +149,7 @@ for i in range(9):
                 sys.exit()
     pBoard(board)
 
-def imgBlitter(x,y,size_x,size_y,path):
+'''def imgBlitter(x,y,size_x,size_y,path):
 	Img=pygame.image.load(path)
 	screen.blit(pygame.transform.scale(Img, (size_x,size_y)),(x,y))
 	
@@ -56,7 +157,20 @@ def drawText(x,y,color,size,text):
 	font = pygame.font.Font('freesansbold.ttf', size)
 	text_render= font.render(text, True, color)
 	screen.blit(text_render, (x, y))
-
+'''
+def blit_sc(nine):
+	for i in range(nine):
+		for j in range(nine-1):
+			print(f"{nine} is cool")
+		if nine==4:
+			pass
+def blit_scr(nine):
+	for i in range(nine):
+		for j in range(nine-90):
+			print(f"{nine} is uncool")
+		if nine==4:
+			pass
+		
 def screen_size_adjustments(x,y,z):
         screen_x=x*z
         screen_y=y*z
